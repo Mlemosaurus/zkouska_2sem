@@ -22,7 +22,7 @@
 
        void Ucet::pridejTransakce(std::vector<double> hodnoty){
             for(double cislo : hodnoty){
-                historieTransakci.push_back(cislo);
+                historieTransakci.push_back(cislo);  //nebo přes klasickej for(int i = 0; i< hodnoty.size(); i++) historieTransakci.push_back(hodnoy.at(i))
             }
 
        }
