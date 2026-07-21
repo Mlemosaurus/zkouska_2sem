@@ -28,7 +28,12 @@
             return *this;   //musíme vrátit referenci na aktuální objekt
         }
 
+                //void BeznyUcet::operator+=(double hodnota){}  pak historieTransakci.push_back(hodnota);
+
+
         std::ostream& operator <<( std::ostream& os,const BeznyUcet& u){
             os<<"BeznyUcet: "<<u.cisloUctu<<" , transakci: "<<u.historieTransakci.size();
             return os;
         }
+
+
