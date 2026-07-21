@@ -19,6 +19,7 @@ class BeznyUcet : public Ucet{
         bool operator==(const BeznyUcet& other);
 
         BeznyUcet&  operator+=(double hodnota);
+        //void operator+=(double hodnota)
 
         friend std::ostream& operator<<(std::ostream& os, const BeznyUcet& u);
 
