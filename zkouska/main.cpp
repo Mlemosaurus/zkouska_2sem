@@ -6,6 +6,7 @@
 #include "bezny.h"
 #include "sporak.h"
 
+//jde udělat i přes referenci (Ucet& u)
 void nejdelsiRada(Ucet* u);  //algoritmy ve funkcích, definice na konci souboru
 void odstraneniVyberu(Ucet* u);
 
@@ -102,6 +103,7 @@ int main(){
     seznam.push_back(p);  
     seznam.push_back(q);
     seznam.push_back(r);
+    //seznam.push_back(new BeznyUcet("2541", {20,30,40,50}, 50.0));  // i takhle se to dá inicializovat, pak projet přes for: delete seznam[i]
 
     for(int i = 0; i<seznam.size(); i++){   //polymorfismus
         seznam[i]->vypisInfo();
@@ -162,4 +164,6 @@ void odstraneniVyberu(Ucet* u){
     for(double num : transakce){
         std::cout<<num<<" ";
     }
+    //šlo by udělat i přes vybírání prvků do novýho vektoru a přes setter to dát zpátky 
 }
+ 
